@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family:Helvetica,Arial,sans-serif,Segoe,Roboto,; */
+    font: x-large;
+   
+}
+/* body{
+    font-family:Helvetica,Arial,sans-serif;
+} */
+header{
+    display:flex;
+    height: 80px;
+    background-color:#ffffff;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #eae0e0;
+}
+
+.logo{
+     height:40px;
+    /*width: 50px;*/
+}
+.container_logo{
+    /* total width of 4% */
+    margin-left:4%;
+}
+.action_bar{
+    margin-right:4%;
+}
+.nav_menu{
+    display:flex;
+    justify-content:space-evenly;
+    min-width:515px;
+}
+.nav_menu a{
+    font-size: 14px;
+    text-decoration:none;
+    text-transform: uppercase;
+    font-weight:700;
+    color:#282c3f;
+    letter-spacing:1px;
+    padding:29px 0;
+    /*  border bottom is used to not move the whole menus*/
+    border-bottom:4px solid white;
+    
+}
+.nav_menu a:hover{
+    /* It will not adjust and disrupt the anchor link thatswhy we add border-bottom to  anchor links  */
+    border-bottom:4px solid #ff3f6c;
+}
+.nav_menu a sup{
+    font-size:8px;
+    color:#ff3f6c;
+}
+.search_bar{
+
+    height:40px;
+    /* Min-width means it takes space when screen size is reduced */
+    min-width:200px;
+    width:30%;
+    /* border: solid; */
+    display:flex;
+    align-items: center;
+}
+.search_icon{
+    box-sizing: content-box;
+    height:20px;
+    padding: 10px;
+    background-color:#f5f5f6 ;
+    color: #282c3f;
+    border-radius: 5px 0  0 5px;
+   
+
+}
+.search_input{
+    /*Available remaining space is acquires */
+    flex-grow:1;
+    height: 40px;
+    color: #696e79;
+    background-color:#f5f5f6 ;
+    border-radius: 0 5px 5px 0;
+    border:none;
+    outline: none;
+
+}
+.action_bar{
+    display:flex;
+    min-width:200px;
+    justify-content: space-evenly;
+}
+.action_container{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* Main Section */
+
+.banner_img{
+    height:auto;
+    max-width:100%;
+}
+.banner_conatiner{
+    margin:40px 0;
+}
+.category_heading{
+    color:#3e4152;
+    text-transform: uppercase;
+    font-size:1.5em;
+    font-weight:700;
+    letter-spacing:.15em;
+    max-height:5em;
+    margin: 50px 0 25px 30px;
+    
+
+}
+/* Main Section Offers Category */
+.category_items{
+    display:flex;
+    flex-wrap:wrap;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+.category_offers{
+    width: 250px;
+  min-width: 350px;
+}
